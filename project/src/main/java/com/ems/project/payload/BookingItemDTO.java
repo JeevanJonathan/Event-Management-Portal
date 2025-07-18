@@ -1,0 +1,15 @@
+package com.ems.project.payload;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class BookingItemDTO {
+    private Long bookingItemId;
+    private BookingDTO booking;
+    private VendorDTO vendorDTO;
+    private Double vendorPrice;
+}
